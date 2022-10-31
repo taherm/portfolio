@@ -1,5 +1,7 @@
 <?php
 
+use App\Models\Skill;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,9 +16,24 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('index');
+    $skills = Skill::all();
+    return view('index', compact('skills'));
 });
 
 Route::get('/about', function () {
     return view('about');
+});
+
+Route::get('/skill', function () {
+    return view('skill');
+});
+
+
+Route::post('/save_skill', function (Request $request) {
+    $skill = new Skill();
+    $skill->name = $request->name;
+    $skill->percentage = $request->percentage;
+    $skill->save();
+    $skills = Skill::all();
+    return view('index', compact('skills'));
 });

@@ -77,40 +77,16 @@
                     </div>
                 </div>
 
+                @foreach($skills as $skill)
                 <div class="progress">
-                    <span class="skill">JavaScript <i class="val">75%</i></span>
-                    <div class="progress-bar-wrap">
-                        <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                </div>
-
-            </div>
-
-            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-
-                <div class="progress">
-                    <span class="skill">PHP <i class="val">80%</i></span>
-                    <div class="progress-bar-wrap">
-                        <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                </div>
-
-                <div class="progress">
-                    <span class="skill">WordPress/CMS <i class="val">90%</i></span>
+                    <span class="skill">{{$skill->name}} <i class="val">{{$skill->percentage}}%</i></span>
                     <div class="progress-bar-wrap">
                         <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
                 </div>
-
-                <div class="progress">
-                    <span class="skill">Photoshop <i class="val">55%</i></span>
-                    <div class="progress-bar-wrap">
-                        <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                </div>
+                @endforeach
 
             </div>
-
         </div>
 
     </div>
@@ -459,7 +435,7 @@
                         <p>+1 5589 55488 55s</p>
                     </div>
 
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3479.2106155246843!2d47.94149651554619!3d29.30549698215718!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3fcf9af4b6e66087%3A0x1b8887bf1d298936!2sAvenues%20Mall%20Phase%204!5e0!3m2!1sen!2skw!4v1667237924393!5m2!1sen!2skw" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
 
             </div>
