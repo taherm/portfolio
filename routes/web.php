@@ -22,6 +22,7 @@ Route::get('/', function () {
 
 Route::get('/about', function () {
     return view('about');
+    dd('testing');
 });
 
 Route::get('/skill', function () {
